@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Flipkart</h1>
+    <input type="text" placeholder="Search products...">
+    <button onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <!-- Products -->
+  <section id="products"></section>
+
+  <!-- Cart Modal -->
+  <div id="cart" class="hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
